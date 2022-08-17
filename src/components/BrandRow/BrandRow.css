@@ -1,0 +1,25 @@
+.all_brands_row {
+    width: 10rem;
+    margin-right: 20px;
+    padding-top: 15px;
+}
+.all_brands_row > div > p {
+    cursor: pointer;
+}
+.all_brands_title {
+    font-weight: 700;
+}
+@media(max-width: 768px) {
+    .all_brands_row {
+        width: 100%;
+
+    }
+    .all_brands_row > div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .all_brands_row > div > p {
+        margin: 0 15px;
+    }
+}

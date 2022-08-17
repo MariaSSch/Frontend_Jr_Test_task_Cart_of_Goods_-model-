@@ -1,0 +1,23 @@
+
+.catalog_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.catalog_title {
+    text-align: left;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+
+
+
+@media(max-width: 768px) {
+    .catalog_container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

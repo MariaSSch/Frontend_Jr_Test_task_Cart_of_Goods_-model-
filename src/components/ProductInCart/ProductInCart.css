@@ -1,0 +1,83 @@
+.item_row {
+    margin-bottom: 20px;
+    align-items: center;
+    position: relative;
+}
+.cart_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item_row::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: lightgrey;
+    position: absolute;
+    bottom: -10px;
+}
+.item_to_buy {
+    display: flex;
+    align-items: center;
+}
+@media(max-width: 768px) {
+    .item_to_buy {
+        flex-direction: column;
+    }
+}
+.quantity {
+    display: flex;
+    align-items: center;
+}
+input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #eaeff2;
+    border: none;
+    border-radius: 5px;
+}
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.change_qty {
+    height: 30px;
+    color: grey;
+}
+.change_qty > button {
+    font-size: 0.7rem;
+    border: none;
+    background-color: transparent;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.total {
+    display: flex;
+    align-items: center;
+}
+.total > div img {
+    cursor: pointer;
+}
+
+.total_count {
+margin-right: 10px;
+}
+.subtotal {
+    text-align: right;
+}
+.subtotal_text {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.subtotal_price {
+    font-size: 1.1rem;
+    font-weight: 400;
+
+}

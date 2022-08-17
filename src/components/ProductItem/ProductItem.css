@@ -1,0 +1,17 @@
+.product_card {
+    margin: 20px;
+}
+.card_img {
+    border: 1px lightgrey solid;
+}
+.card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    
+}
+.card_body {
+    text-align: left;
+    padding-left: 0;
+}
